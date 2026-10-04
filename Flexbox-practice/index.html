@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Practice</title>
+
+    <style>
+        .container {
+            height: 300px;
+            border: 3px solid black;
+<!--  -->
+            display: flex;
+
+            /* PLAY WITH THESE */
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-wrap: wrap;
+            flex-grow: 2;
+
+
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            background: lightblue;
+
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox Playground</h1>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+
+</html>
+
+
+#pond {
+display: flex;
+align-items: flex-start;
+}
+
+.yellow {
+order: 3;
+align-self:end;
+}
